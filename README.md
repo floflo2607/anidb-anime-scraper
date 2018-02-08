@@ -1,6 +1,6 @@
 # Vibe Scraper (anidb.net) Anime Scraper Info:
 
-Simple and Easy to Use |Scrape Anime Information and Episode List (Bulk) Crawl [AnimeDB.net](http://anidb.net/) | Get Anime Information/Episode List in a blink of an eye :D
+Simple and Easy to Use |Scrape Anime Information and Episode List (Bulk) Crawl [AniDB.net](http://anidb.net/) | Get Anime Information/Episode List in a blink of an eye :D
 
 This is my very own first Python Project | Name: Vaishnav J (darksoul2069@gmail.com)| Age: 16 yrs | Country: India |
 
