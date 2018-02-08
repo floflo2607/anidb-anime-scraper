@@ -27,8 +27,8 @@ The Upcoming Updates will include:
 
 ## Usage (For Windows)
 
-* This should be pretty simple: Go to "vibe-scraper" Directory, clone or download zip.
-* Extract zip, open command prompt within the extracted folder.
+* This should be pretty simple: Clone or download zip.
+* Extract zip, go to vibe-scraper Directory, open command prompt within the vibe-scraper folder.
 * In the Command Prompt type:
 
 ```
