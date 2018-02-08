@@ -53,7 +53,6 @@ The rest of the instructions will be given through the program itself!
 
 * BeautifulSoup
 * Requests
-* Re
 
 # Additional Stuff
 
