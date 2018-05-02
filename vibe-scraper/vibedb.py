@@ -28,7 +28,7 @@
 
 # ###################### VERY IMPORTANT ########################
 # BEFORE MODIFYING/DISTRIBUTING THIS PROJECT PLEASE CONTACT ME - "darksoul2069@gmail.com"
-# IF I GAVE YOU THE RIGHT TO MODIFY AND DISTRIBUTE, THEN PLEASE MENTION THE ORIGINAL SOURCE (THAT WOULD BE ME) OR MENTION THAT I VAISHNAV (darksoul2069@gmail.com) OWNS THIS PROJECT!
+# IF I GAVE YOU THE RIGHT TO MODIFY AND DISTRIBUTE, THEN PLEASE MENTION THE ORIGINAL SOURCE (THAT WOULD BE ME) OR MENTION THAT I (darksoul2069@gmail.com) OWNS THIS PROJECT!
 # ALSO SPECIFY THE CHANGES MADE TO THIS PROJECT BEFORE DISTRIBUTION/MODIFICATION
 # ##############################################################
 
@@ -60,7 +60,7 @@ for i in range(max_num):
     episode = episodes[i].find("label", {"itemprop": "name"}) 
     print(f'Fetched- Episode {i+1}')
     with open(anim+".txt", "w") as f:
-        f.write('==============================================================' + '\n' + '|||Vibe Scraper|||darksoul2069|||AniDB.net|||'+'\n'+'Thank you for using Vibe Scraper for AniDB.net This Project was developed by Vaishnav (darksoul2069)'+'\n'+'|||http://AnimeVibe.ml|||' + '\n' + '==============================================================' + "\n" + 'Anime Name - ' + anim + "\n" + 'Poster/Image URL of ' + anim + ' - ' + lol + '\n')
+        f.write('==============================================================' + '\n' + '|||Vibe Scraper|||darksoul2069|||AniDB.net|||'+'\n'+'Thank you for using Vibe Scraper for AniDB.net'+'\n'+'||| http://AnimeVibe.xyz |||' + '\n' + '==============================================================' + "\n" + 'Anime Name - ' + anim + "\n" + 'Poster/Image URL of ' + anim + ' - ' + lol + '\n')
         f.write('------------------' + "\n")
         f.write('Anime Description: ' + '\n' + '------------------' + "\n" + "\n" + anim_desc+"\n"+"\n")
         f.write('------------' + "\n" + 'Episode List' + "\n" + '------------' + "\n")
