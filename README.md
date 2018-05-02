@@ -56,6 +56,7 @@ The rest of the instructions will be given through the program itself!
 
 # Additional Stuff
 
-## This Project was Developed by - darksoul2069 ( Vaishnav J Nair) Email - darksoul2069@gmail.com
+## This Project was Developed by - darksoul2069 Email - darksoul2069@gmail.com
+## This is a pretty simple project for noobs n people who just started off with python web scraping using bs4, pretty easy and not so hard to work with, just go thru the codes... :D good luck!
 ## GitHub Repo: https://github.com/darksoul2069/anidb-anime-scraper/
 **Thank you for using Vibe Scraper**
