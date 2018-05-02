@@ -2,7 +2,7 @@
 
 Simple and Easy to Use |Scrape Anime Information and Episode List (Bulk) Crawl [AniDB.net](http://anidb.net/) | Get Anime Information/Episode List in a blink of an eye :D
 
-This is my very own first Python Project | Name: Vaishnav J (darksoul2069@gmail.com)| Age: 16 yrs | Country: India |
+This is my very own first Python Project | (darksoul2069@gmail.com) |
 
 This is a Scraper made using python, to scrape anime info and episode list with titles!
 
