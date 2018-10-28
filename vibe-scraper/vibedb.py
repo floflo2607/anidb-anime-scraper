@@ -7,30 +7,7 @@
 # | |   ) | | (   ) | | (\ (    |  ( \ \        ) | | |   | | | |   | | | |        /   _/   |   / | | | (   ) )       ) |
 # | (__/  ) | )   ( | | ) \ \__ |  /  \ \ /\____) | | (___) | | (___) | | (____/\ (   (__/\ |  (__) | ( (___) ) /\____) )
 # (______/  |/     \| |/   \__/ |_/    \/ \_______) (_______) (_______) (_______/ \_______/ (_______)  \_____/  \______/ 
-# ####################################################################################################################################################                                                                                                            
-#  __     __             ____  U _____ u      ____      ____    ____       _      ____   U _____ u   ____     
-#  \ \   /"/u  ___    U | __")u\| ___"|/     / __"| uU /"___|U |  _"\ uU  /"\  uU|  _"\ u\| ___"|/U |  _"\ u  
-#   \ \ / //  |_"_|    \|  _ \/ |  _|"      <\___ \/ \| | u   \| |_) |/ \/ _ \/ \| |_) |/ |  _|"   \| |_) |/  
-#   /\ V /_,-. | |      | |_) | | |___       u___) |  | |/__   |  _ <   / ___ \  |  __/   | |___    |  _ <    
-#  U  \_/-(_/U/| |\u    |____/  |_____|      |____/>>  \____|  |_| \_\ /_/   \_\ |_|      |_____|   |_| \_\   
-#    //   .-,_|___|_,-._|| \\_  <<   >>       )(  (__)_// \\   //   \\_ \\    >> ||>>_    <<   >>   //   \\_  
-#   (__)   \_)-' '-(_/(__) (__)(__) (__)     (__)    (__)(__) (__)  (__|__)  (__|__)__)  (__) (__) (__)  (__) 
-# ######################################################################################################################################################
-
-# ################################### VIBE SCRAPER - (ANIDB.NET SCRAPER) BY VAISHNAV (darksoul2069@gmail.com) ##########################################
-
-# ##############################################################
-
-# This is my first python project I created all on my own so it's a little messy... Ok, it's messy af!
-# The Below Codes will definitely give you a Headache, sowwy xD 
-# If you are modifying this Project and distributing it online then Please Contact me at - "darksoul2069@gmail.com" and Tell me why u are modifying this project!
-# This Project is Non-Profit, so don't accept it if somebody is selling this to you! that'd be real stupid cuz this is pretty easy to make :/
-
-# ###################### VERY IMPORTANT ########################
-# BEFORE MODIFYING/DISTRIBUTING THIS PROJECT PLEASE CONTACT ME - "darksoul2069@gmail.com"
-# IF I GAVE YOU THE RIGHT TO MODIFY AND DISTRIBUTE, THEN PLEASE MENTION THE ORIGINAL SOURCE (THAT WOULD BE ME) OR MENTION THAT I (darksoul2069@gmail.com) OWNS THIS PROJECT!
-# ALSO SPECIFY THE CHANGES MADE TO THIS PROJECT BEFORE DISTRIBUTION/MODIFICATION
-# ##############################################################
+# ################################### VIBE SCRAPER - (ANIDB.NET SCRAPER) BY (darksoul2069@gmail.com) ##########################################
 
 import requests
 import re
@@ -50,16 +27,16 @@ episodes = soup.find_all("td", {"class": "title name episode"}) # getting the pl
 image = soup.find_all('div',{"class": "g_section info"}) #getting div for getting the image source
 img = soup.find('img',{"itemprop": "image"}) # getting the precise location of the animes cover.
 lol = img.get('src') # getting the animes image url
-# well everything is pretty easy to grasp and understandable but below this u need to use a little more of that brain... I can't explain the below stuff cuz i am done typing so much shit, but if u know other languages then the below codes are quite familiar.
-anim = anime_name.text.strip() 
+# well everything is pretty easy to grasp and understandable until now xD
+anim = anime_name.text.strip() # Getting the text as a string out of the html tag we grabbed as a whole 
 print(anim)
-anim = input("Give The File Name where you want to store the Anime Information (Anime Name): ")
-anim_desc = anime_desc.text.strip()
-max_num = int(input('Total or Number of Episodes to Fetch (Should be a number): '))
-for i in range(max_num):
-    episode = episodes[i].find("label", {"itemprop": "name"}) 
+anim = input("Give The File Name where you want to store the Anime Information (Anime Name): ") #Taking File name from the user as input
+anim_desc = anime_desc.text.strip() # Stripping out the text from the html tags
+max_num = int(input('Total or Number of Episodes to Fetch (Should be a number): ')) #letting user input the number of episodes to grab (titles only)
+for i in range(max_num): #Setting a range to grab the lists of episode titles
+    episode = episodes[i].find("label", {"itemprop": "name"}) #Grabbing the Episode Titles
     print(f'Fetched- Episode {i+1}')
-    with open(anim+".txt", "w") as f:
+    with open(anim+".txt", "w") as f: #Writing it to a text file
         f.write('==============================================================' + '\n' + '|||Vibe Scraper|||darksoul2069|||AniDB.net|||'+'\n'+'Thank you for using Vibe Scraper for AniDB.net'+'\n'+'||| http://AnimeVibe.xyz |||' + '\n' + '==============================================================' + "\n" + 'Anime Name - ' + anim + "\n" + 'Poster/Image URL of ' + anim + ' - ' + lol + '\n')
         f.write('------------------' + "\n")
         f.write('Anime Description: ' + '\n' + '------------------' + "\n" + "\n" + anim_desc+"\n"+"\n")
@@ -68,4 +45,5 @@ for i in range(max_num):
             episode = episodes[i].find("label", {"itemprop": "name"})
             f.write('Episode ' + str(i+1) + ':' + ' ' + episode.text.strip() + "\n")
 
-print('\n' + '============================' + '\n' + 'Success!!! Anime Information/Episodes is stored in ||"' + str(anim) + '.txt"||' + '\n' + '============================')
+print('\n' + '============================' + '\n' + 'Anime Information/Episodes is stored in ||"' + str(anim) + '.txt"||' + '\n' + '============================')
+# AND YOU ARE DONE xD | ENJOY :/
