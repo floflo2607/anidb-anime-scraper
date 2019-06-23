@@ -15,7 +15,7 @@ from bs4 import BeautifulSoup
 
 headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'} #User Agent cuz we are trynna scrape a site and the site will automatically block bots n stuff so u need this to bypass any kinda of blocked response
 
-print('==============================================' + '\n' + 'This Anime Scraper [for AniDB.net (http://anidb.net)] (Project/Scraper) was made by darksoul2069 if you face any problem you can mail me- "darksoul2069@gmail.com"' + '\n' + 'Hope you loved this python program/scraper!' + '\n' + 'Check out my anime site http://AnimeVibe.ml' + '\n' + '==============================================' + '\n')
+print('==============================================' + '\n' + 'This Anime Scraper [for AniDB.net (http://anidb.net)] (Project/Scraper) was made by darksoul2069 if you face any problem you can mail me- "darksoul2069@gmail.com"' + '\n' + 'Hope you loved this python program/scraper!' + '\n' + 'Check out my anime site https://animevibe.tv' + '\n' + '==============================================' + '\n')
 url = input("Enter AniDB.net URL of the Anime you want to scrape/crawl (Example : https://anidb.net/perl-bin/animedb.pl?show=anime&aid=69) : " )
 source_code = requests.get(url, headers=headers) #requesting the site's page source...
 plain_text = source_code.text #turning the source code to a readable format :P
